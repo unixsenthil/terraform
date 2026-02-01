@@ -14,6 +14,7 @@ resource "azurerm_resource_group" "rg" {
     Organization = "sloopstash"
   }
 }
+
 resource "azurerm_virtual_network" "vnet" {
   depends_on = [azurerm_resource_group.rg]
   name = "vnet"
@@ -30,4 +31,3 @@ resource "azurerm_virtual_network" "vnet" {
     Organization = "sloopstash"
   }
 }
- 
